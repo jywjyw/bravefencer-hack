@@ -1,0 +1,38 @@
+1、补丁版本 v1.0，发布时间2019-02-04
+2、汉化以日版为基础
+3、由于内存字库扩容后出现多处死机，不得已修改成了BIOS字库，PS1/2实机无法运行
+
+
+============= 文件说明 ====================
+SLPS_014.90：	 补丁文件
+brm-bios.BIN：	汉化bios文件
+PSP/brm.fnt:	PSP用字体文件
+工具/ppf-o-matic3.exe: 打补丁工具
+
+
+============= Windows运行方式 =============
+1、下载ePSXe2.x版本(不要用ePSXe1.x版本)
+2、Config -> bios -> 选择brm-bios.BIN，取消勾选“Enable HLE Bios"
+3、把补丁SLPS_014.90放到ePSXe/patches目录下，或者用ppf-o-matic3.exe把补丁文件写入日版镜像中
+4、File -> Run ISO -> 选择光盘镜像
+
+
+============= PS3自制系统运行方式 =============
+1、打开Multiman -> 设置 -> 开启"允许写入dev_flash"
+2、备份/dev_flash/ps1emu/ps1_rom.bin(玩其它用到bios字库的游戏时要替换回来)
+3、把brm-bios.BIN重命名为ps1_rom.bin，替换/dev_flash/ps1emu同名文件
+4、用ppf-o-matic3.exe把补丁文件写入日版镜像中
+5、把镜像放到PSXISO目录下用Multiman加载镜像
+
+
+============= PSP运行方式 =============
+1、用ppf-o-matic3.exe把补丁文件写入日版镜像中
+2、用转换工具psx2psp把镜像转成PSP格式，放到PSP/GAMES目录下
+3、运行游戏后，使用金手指工具加载brm.fnt字体文件
+
+
+===============汉化组成员==============
+破解：草之头
+翻译：路西華、人海沉沦
+改图：FEYA
+测试：壹世虛無、dontellmama

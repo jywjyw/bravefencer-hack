@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<main name="MAIN/010/1.1">
+		<text addr="0,407D0,450DE"/>
+	</main>
+	
+	<file name="SC01/001/0.4"><text dump="EN" addr="60DFC,61D78"/></file>
+	<file name="SC01/004/0.4"><text dump="EN" addr="641A8,65057"/></file>
+	<file name="SC01/005/0.4"><text dump="EN" addr="6083C,625C1,9B91C,9C7CB"/></file>
+	<file name="SC01/006/0.4"><text dump="EN" addr="6083C,625C1,9B91C,9C7CB"/></file>
+	<file name="SC01/008/0.4"><text dump="EN" addr="5B1AD,5C72C,773B8,78267"/></file>
+	<file name="SC01/009/0.4"><text dump="EN" addr="5E37C,65173,C6CDC,C7B8B"/></file>
+	<file name="SC01/077/0.4"><text dump="EN" addr="89528,898BA"/></file>
+	<file name="SC01/080/0.4"><text dump="EN" addr="62414,625AC"/></file>
+	<file name="SC01/084/0.4"><text dump="EN" addr="7AFE4,7B18E"/></file>
+	
+	<file name="SC02/000/0.4"><text dump="EN" addr="7FAB4,7FBF8"/></file>
+	<file name="SC02/003/0.4"><text dump="EN" addr="7FAB4,7FBF8"/></file>
+	<file name="SC02/005/0.4"><text dump="EN" addr="6EE90,6F56F"/></file>
+	<file name="SC02/011/0.4"><text dump="EN" addr="6E16C,6EDB9"/></file>
+	<file name="SC02/015/0.4"><text dump="EN" addr="59E00,59EFA"/></file>
+	<file name="SC02/016/0.4"><text dump="EN" addr="63AA0,63C4E"/></file>
+	<file name="SC02/017/0.4"><text dump="EN" addr="6A230,6AED4"/></file>
+	<file name="SC02/021/0.4"><text dump="EN" addr="5B8FC,5BFF4"/></file>
+	<file name="SC02/026/0.4"><text dump="EN" addr="61B80,61C57"/></file>
+	<file name="SC02/027/0.4"><text dump="EN" addr="67434,675C9"/></file>
+	<file name="SC02/028/0.4"><text dump="EN" addr="67218,67339"/></file>
+	<file name="SC02/031/0.4"><text dump="EN" addr="614D0,6184D"/></file>
+	<file name="SC02/037/0.1"><text dump="EN" addr="5F914,5FAB5"/></file>
+	<file name="SC02/041/0.4"><text dump="EN" addr="60C5C,60D3C"/></file>
+	
+	
+	<file name="SC03/001/0.4"><text dump="EN" addr="6AA9C,6D338,99754,9B0B2"/></file>
+	<file name="SC03/002/0.4"><text dump="EN" addr="61C70,64638,806CC,8202A"/></file>
+	<file name="SC03/003/0.4"><text dump="EN" addr="5AF58,5AFD3"/></file>
+	<file name="SC03/006/0.4"><text dump="EN" addr="69068,69CBA"/></file>
+	<file name="SC03/011/0.4"><text dump="EN" addr="5DD70,5EE5D"/></file>
+	<file name="SC03/013/0.4"><text dump="EN" addr="73B00,744BD"/></file>
+	<file name="SC03/014/0.4"><text dump="EN" addr="6EC44,6FCCC"/></file>
+	<file name="SC03/015/0.4"><text dump="EN" addr="6EC44,6FCCC"/></file>
+	<file name="SC03/023/0.4"><text dump="EN" addr="5ABCC,5ABFF"/></file>
+	<file name="SC03/024/0.4"><text dump="EN" addr="69BB4,6A410"/></file>
+	<file name="SC03/028/0.4"><text dump="EN" addr="68EE0,69577"/></file>
+	<file name="SC03/029/0.4"><text dump="EN" addr="669BC,66D8E"/></file>
+	<file name="SC03/031/0.4"><text dump="EN" addr="5E5A4,5E85C"/></file>
+	<file name="SC03/053/0.1"><text dump="EN" addr="5D4,1497"/></file>
+	<file name="SC03/054/0.1"><text dump="EN" addr="CE0,1BEB"/></file>
+	<file name="SC03/056/0.1"><text dump="EN" addr="F8,D13"/></file>
+	<file name="SC03/073/2.1"><text dump="EN" addr="CBC,1D4B"/></file>
+	<file name="SC03/074/2.1"><text dump="EN" addr="D9C,1878"/></file>
+	<file name="SC03/075/2.1"><text dump="EN" addr="1498,22C4"/></file>
+	<file name="SC03/076/2.1"><text dump="EN" addr="42F4,50E1"/></file>
+	<file name="SC03/077/2.1"><text dump="EN" addr="10CC,278F"/></file>
+	<file name="SC03/078/2.1"><text dump="EN" addr="C10,1240"/></file>
+	<file name="SC03/079/2.1"><text dump="EN" addr="D70,1F30"/></file>
+	<file name="SC03/092/0.4"><text dump="EN" addr="614A4,62401"/></file>
+	<file name="SC03/097/0.4"><text dump="EN" addr="61B5C,61D43"/></file>
+	<file name="SC03/100/0.4"><text dump="EN" addr="60514,606A8"/></file>
+	<file name="SC03/101/0.4"><text dump="EN" addr="5F3D0,5F41B"/></file>
+	<file name="SC03/104/0.4"><text dump="EN" addr="66788,668A5"/></file>
+	<file name="SC03/105/0.4"><text dump="EN" addr="67420,675C0"/></file>
+	<file name="SC03/109/0.4"><text dump="EN" addr="59EAC,59F24"/></file>
+	<file name="SC03/110/0.4"><text dump="EN" addr="5D9D4,5DADD"/></file>
+	<file name="SC03/111/0.4"><text dump="EN" addr="60B2C,60E21"/></file>
+	<file name="SC03/114/0.4"><text dump="EN" addr="5B298,5B793"/></file>
+	<file name="SC03/115/0.4"><text dump="EN" addr="5C0A4,5C39C"/></file>
+	<file name="SC03/117/0.4"><text dump="EN" addr="60B8C,60DAC"/></file>
+	<file name="SC03/118/0.4"><text dump="EN" addr="6C004,6CADF"/></file>
+	<file name="SC03/119/0.4"><text dump="EN" addr="6C004,6CADF"/></file>
+	<file name="SC03/121/0.4"><text dump="EN" addr="5DE74,5E6AC"/></file>
+	<file name="SC03/124/0.4"><text dump="EN" addr="68704,6BBF3"/></file>
+	<file name="SC03/125/0.4"><text dump="EN" addr="6035C,6384B,7E998,802F6"/></file>
+	<file name="SC03/126/0.4"><text dump="EN" addr="5AF00,5AF7A"/></file>
+	<file name="SC03/132/2.1"><text dump="EN" addr="BC0,1C4F"/></file>
+	<file name="SC03/133/2.1"><text dump="EN" addr="CAB,1784"/></file>
+	<file name="SC03/134/2.1"><text dump="EN" addr="13CC,21F8"/></file>
+	<file name="SC03/135/2.1"><text dump="EN" addr="4200,4FED"/></file>
+	<file name="SC03/136/2.1"><text dump="EN" addr="FB8,267B"/></file>
+	<file name="SC03/137/2.1"><text dump="EN" addr="B1C,114C"/></file>
+	<file name="SC03/138/2.1"><text dump="EN" addr="FC8,2188"/></file>
+	
+	
+	<file name="SC04/000/0.4"><text dump="EN" addr="5F0C8,5F8D2"/></file>
+	<file name="SC04/002/0.4"><text dump="EN" addr="64548,64733"/></file>
+	<file name="SC04/003/0.4"><text dump="EN" addr="5DC98,5DCF4"/></file>
+	<file name="SC04/005/0.4"><text dump="EN" addr="638FC,63BB6"/></file>
+	<file name="SC04/006/0.4"><text dump="EN" addr="5B6D4,5B7B0"/></file>
+	<file name="SC04/007/0.4"><text dump="EN" addr="6182C,61940"/></file>
+	<file name="SC04/009/0.4"><text dump="EN" addr="5A760,5A83B"/></file>
+	<file name="SC04/011/0.4"><text dump="EN" addr="6CD74,6CE2B"/></file>
+	<file name="SC04/012/0.4"><text dump="EN" addr="5A290,5A4C2"/></file>
+	<file name="SC04/015/0.4"><text dump="EN" addr="60B9C,60F1D,9C39C,9DCFA"/></file>
+	<file name="SC04/016/0.4"><text dump="EN" addr="5CD08,5D309"/></file>
+	<file name="SC04/018/0.4"><text dump="EN" addr="B65F8,B7F56,B8638,BB676"/></file>
+	<file name="SC04/019/0.4"><text dump="EN" addr="B65F8,B7F56,B8638,BB676"/></file>
+	<file name="SC04/020/0.4"><text dump="EN" addr="80934,82292,8E0BC,910FA"/></file>
+	<file name="SC04/021/0.4"><text dump="EN" addr="5AF00,5AF7A"/></file>
+	<file name="SC04/024/2.1"><text dump="EN" addr="BE8,1C77"/></file>
+	<file name="SC04/025/2.1"><text dump="EN" addr="CD0,17AC"/></file>
+	<file name="SC04/026/2.1"><text dump="EN" addr="13CC,21F8"/></file>
+	<file name="SC04/027/2.1"><text dump="EN" addr="4228,5015"/></file>
+	<file name="SC04/028/2.1"><text dump="EN" addr="FE0,26A3"/></file>
+	<file name="SC04/029/2.1"><text dump="EN" addr="B44,1174"/></file>
+	<file name="SC04/030/2.1"><text dump="EN" addr="CA4,1E64"/></file>
+	
+	<!-- 以下与日文版完全对照 -->
+	<file name="SC05/000/0.4"><text dump="EN" addr="59FF0,5A0A8"/></file>
+	<file name="SC05/001/0.4"><text dump="EN" addr="61AAC,61C0D"/></file>
+	<file name="SC05/002/0.4"><text dump="EN" addr="5C0B4,5C19C"/></file>
+	<file name="SC05/007/0.4"><text dump="EN" addr="5C5C0,5C7E1"/></file>
+	<file name="SC05/010/0.4"><text dump="EN" addr="6C264,6C429"/></file>
+	<file name="SC05/011/0.4"><text dump="EN" addr="5A390,5A818"/></file>
+	<file name="SC05/017/0.4"><text dump="EN" addr="BC8B8,BE216,BE8F8,C1686"/></file>
+	<file name="SC05/018/0.4"><text dump="EN" addr="775A8,78F06,B8454,BB1E2"/></file>
+	<file name="SC05/019/0.4"><text dump="EN" addr="5AF00,5AF7A"/></file>
+	<file name="SC05/023/2.1"><text dump="EN" addr="C18,1CA7"/></file>
+	<file name="SC05/024/2.1"><text dump="EN" addr="CF8,17D4"/></file>
+	<file name="SC05/025/2.1"><text dump="EN" addr="13F4,2220"/></file>
+	<file name="SC05/026/2.1"><text dump="EN" addr="4250,503D"/></file>
+	<file name="SC05/027/2.1"><text dump="EN" addr="1008,26CB"/></file>
+	<file name="SC05/028/2.1"><text dump="EN" addr="B6C,119C"/></file>
+	<file name="SC05/029/2.1"><text dump="EN" addr="CCC,1E8C"/></file>
+
+
+	<file name="SC06/000/0.4"><text dump="EN" addr="69DA8,69E68"/></file>
+	<file name="SC06/006/0.4"><text dump="EN" addr="5E3F8,5E654"/></file>
+	<file name="SC06/008/0.4"><text dump="EN" addr="617AC,617CD"/></file>
+	<file name="SC06/010/0.4"><text dump="EN" addr="630A8,630C4"/></file>
+	<file name="SC06/016/0.4"><text dump="EN" addr="61160,6149E"/></file>
+	<file name="SC06/020/0.4"><text dump="EN" addr="60C20,60C3F"/></file>
+	<file name="SC06/025/0.4"><text dump="EN" addr="614B0,61D19"/></file>
+	<file name="SC06/027/0.4"><text dump="EN" addr="59AA4,59B71"/></file>
+	<file name="SC06/029/0.4"><text dump="EN" addr="6A284,6B5B2"/></file>
+	<file name="SC06/030/0.4"><text dump="EN" addr="5DDBC,5E006"/></file>
+	
+	
+	<file name="SC07/000/0.4"><text dump="EN" addr="5E7EC,5EAB3"/></file>
+	<file name="SC07/001/0.4"><text dump="EN" addr="5D62C,5D7EA"/></file>
+	<file name="SC07/002/0.4"><text dump="EN" addr="624D0,625CF"/></file>
+	<file name="SC07/007/1.4"><text dump="EN" addr="60764,60DF5"/></file>
+</xml>

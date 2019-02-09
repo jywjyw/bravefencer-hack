@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xml>
+	<file name="MAIN\010\0.0">
+		<font pos="0,7,6,6,6,6,6" />
+	</file>
+	<file name="MAIN\011\0.0">
+		<font pos="0,7,6,6,6,6,6" />
+	</file>
+	<file name="MAIN/012/0.0">
+		<font pos="16,7,6,6,6,6,6" />
+	</file>
+	<file name="SC01\006\1.0">
+		<font pos="169,10,8,8,7,7,7" />
+	</file>
+	<file name="SC03\163\0.0">
+		<font pos="0,7,6,6,6,6,6" />
+	</file>
+	<file name="SC07\007\0.0">
+		<font pos="166,14,17,16,16,16,17" />
+	</file>
+	<file name="SC07\010\0.0">
+		<font pos="42,9,8,8,6,7,7" />
+	</file>
+	
+	
+	<file name="MAIN\010\0.0">
+		<rface pos="16,23,30,37,44"/>
+	</file>
+	<file name="MAIN\011\0.0">
+		<rface pos="16,23,30,37,44"/>
+	</file>
+	<file name="SC01\000\1.0">
+		<rface pos="174,179,184,189,194"/>
+	</file>
+	<file name="SC01\001\1.0">
+		<rface pos="169,178,186,197,208"/>
+	</file>
+	<file name="SC01\004\1.0">
+		<rface pos="80,85,90,96,102"/>
+	</file>
+	<file name="SC01\005\1.0">
+		<rface pos="176,179,181,183,185"/>
+	</file>
+	<file name="SC01\006\1.0">
+		<rface pos="190,199,207,215,223"/>
+	</file>
+	<file name="SC01\008\1.0">
+		<rface pos="94,100,107,115,123"/>
+	</file>
+	<file name="SC01\009\1.0">
+		<rface pos="114,120,125,131,138"/>
+	</file>
+	<file name="SC01\074\1.0">
+		<rface pos="130,131,132,135,138"/>
+	</file>
+	<file name="SC01\075\1.0">
+		<rface pos="178,182,186,191,196"/>
+	</file>
+	<file name="SC01\078\1.0">
+		<rface pos="178,182,186,191,196"/>
+	</file>
+	<file name="SC01\079\1.0">
+		<rface pos="146,147,148,150,151"/>
+	</file>
+	<file name="SC01\080\1.0">
+		<rface pos="196,209,221,235,249"/>
+	</file>
+	<file name="SC02\000\1.0">
+		<rface pos="194,205,217,228,238"/>
+	</file>
+	<file name="SC02\007\1.0">
+		<rface pos="179,181,185,189,193"/>
+	</file>
+	<file name="SC02\010\1.0">
+		<rface pos="185,193,201,207,213"/>
+	</file>
+	<file name="SC02\014\1.0">
+		<rface pos="192,199,206,213,220"/>
+	</file>
+	<file name="SC03\001\1.0">
+		<rface pos="187,193,199,204,209"/>
+	</file>
+	<file name="SC03\002\1.0">
+		<rface pos="188,194,200,207,215"/>
+	</file>
+	<file name="SC03\004\1.0">
+		<rface pos="72,73,74,75,76"/>
+	</file>
+	<file name="SC03\007\1.0">
+		<rface pos="197,208,218,225,233"/>
+	</file>
+	<file name="SC03\008\1.0">
+		<rface pos="175,176,178,183,188"/>
+	</file>
+	<file name="SC03\009\1.0">
+		<rface pos="193,201,209,217,224"/>
+	</file>
+	<file name="SC03\012\1.0">
+		<rface pos="147,151,155,159,163"/>
+	</file>
+	<file name="SC03\013\1.0">
+		<rface pos="176,185,193,202,209"/>
+	</file>
+	<file name="SC03\014\1.0">
+		<rface pos="174,182,190,198,204"/>
+	</file>
+	<file name="SC03\015\1.0">
+		<rface pos="149,154,158,163,168"/>
+	</file>
+	<file name="SC03\016\1.0">
+		<rface pos="195,206,216,226,236"/>
+	</file>
+	<file name="SC03\017\1.0">
+		<rface pos="195,206,216,226,236"/>
+	</file>
+	<file name="SC03\025\1.0">
+		<rface pos="172,173,174,176,179"/>
+	</file>
+	<file name="SC03\026\1.0">
+		<rface pos="192,203,214,226,238"/>
+	</file>
+	<file name="SC03\030\1.0">
+		<rface pos="156,165,174,182,192"/>
+	</file>
+	<file name="SC03\031\1.0">
+		<rface pos="195,204,213,222,232"/>
+	</file>
+	<file name="SC03\032\1.0">
+		<rface pos="197,207,217,230,243"/>
+	</file>
+	<file name="SC03\033\1.0">
+		<rface pos="110,112,113,114,115"/>
+	</file>
+	<file name="SC03\034\1.0">
+		<rface pos="191,198,206,213,220"/>
+	</file>
+	<file name="SC03\035\1.0">
+		<rface pos="177,189,201,213,223"/>
+	</file>
+	<file name="SC03\036\1.0">
+		<rface pos="192,199,206,212,220"/>
+	</file>
+	<file name="SC03\037\1.0">
+		<rface pos="110,112,113,114,115"/>
+	</file>
+	<file name="SC03\105\1.0">
+		<rface pos="199,211,224,235,248"/>
+	</file>
+	<file name="SC03\106\1.0">
+		<rface pos="181,185,190,196,200"/>
+	</file>
+	<file name="SC03\107\1.0">
+		<rface pos="187,196,206,217,229"/>
+	</file>
+	<file name="SC03\108\1.0">
+		<rface pos="197,208,219,229,239"/>
+	</file>
+	<file name="SC03\109\1.0">
+		<rface pos="191,197,200,203,207"/>
+	</file>
+	<file name="SC03\110\1.0">
+		<rface pos="181,186,189,193,197"/>
+	</file>
+	<file name="SC03\111\1.0">
+		<rface pos="182,188,192,196,201"/>
+	</file>
+	<file name="SC03\112\1.0">
+		<rface pos="199,210,220,228,235"/>
+	</file>
+	<file name="SC03\113\1.0">
+		<rface pos="188,195,199,204,213"/>
+	</file>
+	<file name="SC03\114\1.0">
+		<rface pos="201,214,225,236,247"/>
+	</file>
+	<file name="SC03\115\1.0">
+		<rface pos="182,185,187,190,194"/>
+	</file>
+	<file name="SC03\116\1.0">
+		<rface pos="162,165,167,169,172"/>
+	</file>
+	<file name="SC03\117\1.0">
+		<rface pos="179,184,186,190,196"/>
+	</file>
+	<file name="SC03\118\1.0">
+		<rface pos="163,168,174,182,191"/>
+	</file>
+	<file name="SC03\119\1.0">
+		<rface pos="126,134,142,152,162"/>
+	</file>
+	<file name="SC03\120\1.0">
+		<rface pos="193,200,205,211,219"/>
+	</file>
+	<file name="SC03\121\1.0">
+		<rface pos="191,199,207,215,225"/>
+	</file>
+	<file name="SC03\122\1.0">
+		<rface pos="181,187,192,197,201"/>
+	</file>
+	<file name="SC03\123\1.0">
+		<rface pos="187,195,201,207,213"/>
+	</file>
+	<file name="SC03\124\1.0">
+		<rface pos="198,210,220,230,240"/>
+	</file>
+	<file name="SC03\125\1.0">
+		<rface pos="187,193,195,197,199"/>
+	</file>
+	<file name="SC03\126\1.0">
+		<rface pos="170,179,188,197,206"/>
+	</file>
+	<file name="SC03\128\1.0">
+		<rface pos="152,153,155,158,161"/>
+	</file>
+	<file name="SC03\129\1.0">
+		<rface pos="188,197,206,216,226"/>
+	</file>
+	<file name="SC03\130\1.0">
+		<rface pos="189,197,205,212,219"/>
+	</file>
+	<file name="SC03\131\1.0">
+		<rface pos="154,157,161,165,170"/>
+	</file>
+	<file name="SC03\132\1.0">
+		<rface pos="195,204,214,224,236"/>
+	</file>
+	<file name="SC03\133\1.0">
+		<rface pos="162,165,169,174,179"/>
+	</file>
+	<file name="SC03\134\1.0">
+		<rface pos="192,200,209,218,227"/>
+	</file>
+	<file name="SC03\135\1.0">
+		<rface pos="198,208,218,229,240"/>
+	</file>
+	<file name="SC03\136\1.0">
+		<rface pos="131,132,133,134,137"/>
+	</file>
+	<file name="SC03\137\1.0">
+		<rface pos="165,176,187,198,209"/>
+	</file>
+	<file name="SC03\138\1.0">
+		<rface pos="190,196,204,214,224"/>
+	</file>
+	<file name="SC03\139\1.0">
+		<rface pos="194,203,212,223,234"/>
+	</file>
+	<file name="SC03\140\1.0">
+		<rface pos="194,203,212,223,234"/>
+	</file>
+	<file name="SC03\142\1.0">
+		<rface pos="188,197,206,215,224"/>
+	</file>
+	<file name="SC03\143\1.0">
+		<rface pos="121,124,128,131,135"/>
+	</file>
+	<file name="SC03\148\1.0">
+		<rface pos="188,194,200,205,210"/>
+	</file>
+	<file name="SC03\149\1.0">
+		<rface pos="188,194,200,207,215"/>
+	</file>
+	<file name="SC03\150\1.0">
+		<rface pos="72,73,74,75,76"/>
+	</file>
+	<file name="SC03\163\0.0">
+		<rface pos="16,23,30,37,44"/>
+	</file>
+	<file name="SC04\000\1.0">
+		<rface pos="199,208,217,230,243"/>
+	</file>
+	<file name="SC04\002\1.0">
+		<rface pos="185,192,200,207,214"/>
+	</file>
+	<file name="SC04\003\1.0">
+		<rface pos="181,189,195,201,205"/>
+	</file>
+	<file name="SC04\004\1.0">
+		<rface pos="166,170,173,176,178"/>
+	</file>
+	<file name="SC04\005\1.0">
+		<rface pos="167,177,185,193,200"/>
+	</file>
+	<file name="SC04\006\1.0">
+		<rface pos="189,195,201,206,211"/>
+	</file>
+	<file name="SC04\007\1.0">
+		<rface pos="167,174,180,186,193"/>
+	</file>
+	<file name="SC04\008\1.0">
+		<rface pos="195,205,214,223,230"/>
+	</file>
+	<file name="SC04\009\1.0">
+		<rface pos="149,154,159,164,169"/>
+	</file>
+	<file name="SC04\010\1.0">
+		<rface pos="189,195,201,205,208"/>
+	</file>
+	<file name="SC04\011\1.0">
+		<rface pos="172,179,186,193,200"/>
+	</file>
+	<file name="SC04\012\1.0">
+		<rface pos="191,204,217,229,241"/>
+	</file>
+	<file name="SC04\013\1.0">
+		<rface pos="191,199,207,215,220"/>
+	</file>
+	<file name="SC04\017\1.0">
+		<rface pos="198,209,220,230,240"/>
+	</file>
+	<file name="SC04\018\1.0">
+		<rface pos="159,162,163,165,167"/>
+	</file>
+	<file name="SC04\020\1.0">
+		<rface pos="187,193,199,204,209"/>
+	</file>
+	<file name="SC04\021\1.0">
+		<rface pos="187,193,199,204,209"/>
+	</file>
+	<file name="SC04\022\1.0">
+		<rface pos="188,194,200,207,215"/>
+	</file>
+	<file name="SC04\023\1.0">
+		<rface pos="72,73,74,75,76"/>
+	</file>
+	<file name="SC05\000\1.0">
+		<rface pos="184,191,200,208,214"/>
+	</file>
+	<file name="SC05\001\1.0">
+		<rface pos="188,196,204,212,220"/>
+	</file>
+	<file name="SC05\002\1.0">
+		<rface pos="180,184,188,189,190"/>
+	</file>
+	<file name="SC05\003\1.0">
+		<rface pos="192,200,207,215,223"/>
+	</file>
+	<file name="SC05\004\1.0">
+		<rface pos="183,190,194,201,208"/>
+	</file>
+	<file name="SC05\005\1.0">
+		<rface pos="191,198,205,211,218"/>
+	</file>
+	<file name="SC05\006\1.0">
+		<rface pos="121,123,124,126,129"/>
+	</file>
+	<file name="SC05\007\1.0">
+		<rface pos="176,177,178,180,184"/>
+	</file>
+	<file name="SC05\008\1.0">
+		<rface pos="34,47,60,73,86"/>
+	</file>
+	<file name="SC05\009\1.0">
+		<rface pos="195,202,207,212,217"/>
+	</file>
+	<file name="SC05\010\1.0">
+		<rface pos="109,116,123,131,139"/>
+	</file>
+	<file name="SC05\011\1.0">
+		<rface pos="201,213,224,236,247"/>
+	</file>
+	<file name="SC05\017\1.0">
+		<rface pos="187,193,199,204,209"/>
+	</file>
+	<file name="SC05\018\1.0">
+		<rface pos="188,195,202,209,217"/>
+	</file>
+	<file name="SC05\019\1.0">
+		<rface pos="72,73,74,75,76"/>
+	</file>
+	<file name="SC06\000\1.0">
+		<rface pos="198,211,223,235,247"/>
+	</file>
+	<file name="SC06\006\1.0">
+		<rface pos="202,215,228,243,258"/>
+	</file>
+	<file name="SC06\008\1.0">
+		<rface pos="197,205,213,220,228"/>
+	</file>
+	<file name="SC06\010\1.0">
+		<rface pos="174,179,184,189,194"/>
+	</file>
+	<file name="SC06\011\1.0">
+		<rface pos="199,208,217,224,234"/>
+	</file>
+	<file name="SC06\013\1.0">
+		<rface pos="194,203,212,219,227"/>
+	</file>
+	<file name="SC06\014\1.0">
+		<rface pos="196,206,215,223,232"/>
+	</file>
+	<file name="SC06\015\1.0">
+		<rface pos="185,190,195,198,202"/>
+	</file>
+	<file name="SC06\016\1.0">
+		<rface pos="130,136,142,149,156"/>
+	</file>
+	<file name="SC06\018\1.0">
+		<rface pos="199,212,225,238,251"/>
+	</file>
+	<file name="SC06\020\1.0">
+		<rface pos="191,198,205,210,215"/>
+	</file>
+	<file name="SC06\022\1.0">
+		<rface pos="202,215,228,241,254"/>
+	</file>
+	<file name="SC06\024\1.0">
+		<rface pos="202,215,228,241,254"/>
+	</file>
+	<file name="SC06\025\1.0">
+		<rface pos="182,191,200,210,218"/>
+	</file>
+	<file name="SC06\027\1.0">
+		<rface pos="193,203,213,224,235"/>
+	</file>
+	<file name="SC06\029\1.0">
+		<rface pos="186,199,212,224,236"/>
+	</file>
+	<file name="SC06\030\1.0">
+		<rface pos="108,111,114,116,118"/>
+	</file>
+	<file name="SC06\032\1.0">
+		<rface pos="191,199,207,219,231"/>
+	</file>
+	<file name="SC06\033\1.0">
+		<rface pos="198,211,224,237,249"/>
+	</file>
+	<file name="SC07\000\1.0">
+		<rface pos="173,182,188,196,204"/>
+	</file>
+	<file name="SC07\001\1.0">
+		<rface pos="187,195,203,211,219"/>
+	</file>
+	<file name="SC07\002\1.0">
+		<rface pos="104,105,106,107,108"/>
+	</file>
+	<file name="SC07\003\0.0">
+		<rface pos="81,88,95,105,115"/>
+	</file>
+	<file name="SC07\004\0.0">
+		<rface pos="97,110,123,137,151"/>
+	</file>
+	<file name="SC07\006\0.0">
+		<rface pos="194,206,218,231,244"/>
+	</file>
+	<file name="SC07\007\0.0">
+		<rface pos="200,217,234,251,269"/>
+	</file>
+	<file name="SC07\008\1.0">
+		<rface pos="10,11,12,13,14"/>
+	</file>
+	<file name="SC07\009\1.0">
+		<rface pos="162,171,178,183,188"/>
+	</file>
+	<file name="SC07\010\0.0">
+		<rface pos="62,71,78,86,94"/>
+	</file>
+	<file name="SC07\011\0.0">
+		<rface pos="168,170,172,174,176"/>
+	</file>
+	
+
+
+</xml>

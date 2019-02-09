@@ -1,0 +1,1209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+结构common:[字库指针,起始地址1,结束地址1,开始地址2,结束地址2]或[字库指针,结束地址1,开始地址2,结束地址2], 脚本的起始地址来自于SLPS_014.90~0x62620
+结构Shop:[字库指针,开始地址1,结束地址1,开始地址2,结束地址2]或[字库指针,结束地址1,开始地址2,结束地址2], 脚本的起始地址取决于父脚本
+结构Nosubfont:无E字库,[文本开始地址,文本结束地址]
+结构?:专用结构
+
+* 结束地址:最后一个0所在的位置
+ -->
+<xml>
+	<main name="MAIN/010/1.1">
+		<!-- 主脚本地址格式:字库offset,文本开始地址,文本结束地址 -->
+		<text addr="4C4C,43380,46A14" en="MAIN/010/1.1"/>
+		<vram group="item" text="46d34"/>
+		<func name="locateFont"/>
+	</main>
+	
+	<main name="MAIN/012/1.1">
+		<vram group="pause" text="5afd4"/>
+		<vram group="memcard" text="5BCCC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58B44"/>
+		<vface xywh="57E68"/>
+	</main>
+	
+	<file name="SC01/000/0.4">
+		<vram group="pause" text="7b364"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59424"/>
+		<vface xywh="58748"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/001/0.4" enc2="43">
+		<text export="S2" import="common" addr="60D40,61F8F" newfont="limit" en="SC01/001/0.4"/>
+		<vram group="pause" text="c3bc8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5E190"/>
+		<vface xywh="5D4B4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/004/0.4">
+		<text export="S2" import="common" addr="5ABA4,65FEC,66AAB" newfont="limit" en="SC01/004/0.4"/>
+		<vram group="pause" text="67430"/>
+		<vram group="castle" text="68148"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59A1C"/>
+		<vface xywh="58D40"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/005/0.4">
+		<text export="S2" import="common" addr="60648,620CE,9D448,9DF06" newfont="limit" en="SC01/005/0.4"/>
+		<vram group="pause" text="A4878"/>
+		<vram group="castle" text="A5590"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5CBB0"/>
+		<vface xywh="5BED4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/006/0.4">
+		<text export="S2" import="common" addr="60648,620CE,9D448,9DF06" newfont="limit" en="SC01/006/0.4"/>
+		<vram group="pause" text="A4878"/>
+		<vram group="castle" text="A5590"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5CBB0"/>
+		<vface xywh="5BED4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/008/0.4">
+		<text export="S2" import="common" addr="5AFB4,5C1B7,78EBC,7997A" newfont="limit" en="SC01/008/0.4"/>
+		<vram group="pause" text="7A300"/>
+		<vram group="castle" text="7B018"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59F90"/>
+		<vface xywh="592B4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/009/0.4">
+		<text export="S2" import="common" addr="5E188,63B15,C76E0,C819E" newfont="limit" en="SC01/009/0.4"/>
+		<vram group="pause" text="C8FC4"/>
+		<vram group="castle" text="C9CDC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5D178"/>
+		<vface xywh="5C49C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/074/0.4">
+		<vram group="pause" text="71864"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58DF8"/>
+		<vface xywh="5811C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/075/0.4">
+		<text export="S2" import="common" addr="7F8D8,7FA10" newfont="limit" en="SC02/000/0.4"/>
+		<vram group="pause" text="BD8F4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="65404"/>
+		<vface xywh="64728"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/078/0.4">
+		<text export="S2" import="common" addr="7F8D8,7FA10" newfont="limit" en="SC02/003/0.4"/>
+		<vram group="pause" text="BD8F4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="65404"/>
+		<vface xywh="64728"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/079/0.4">
+		<vram group="pause" text="6BEB8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="584DC"/>
+		<vface xywh="57800"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC01/080/0.4">
+		<text export="S2" import="common" addr="6EC98,6F2CF" newfont="limit" en="SC02/005/0.4"/>
+		<vram group="pause" text="B9C08"/>
+		<vram group="boss" text="BA900"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6B0D8"/>
+		<vface xywh="6A3FC"/>
+		<func name="locateFont"/>
+	</file>
+
+
+	<file name="SC02/000/0.4">
+		<text export="S2" import="common" addr="69F50,6AB07" newfont="limit" en="SC02/017/0.4"/>
+		<vram group="pause" text="C5458"/>
+		<func name="showGetin"/>
+		<vram group="other" text="64BE8"/>
+		<vface xywh="63F0C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC02/007/0.4">
+		<text export="S2" import="common" addr="89334,89630" newfont="limit" en="SC01/077/0.4"/>
+		<vram group="pause" text="B0094"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6131C"/>
+		<vface xywh="60640"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC02/010/0.4">
+		<text export="S2" import="common" addr="62220,623B8" newfont="limit" en="SC01/080/0.4"/>
+		<vram group="pause" text="9B6C4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5DD58"/>
+		<vface xywh="5D07C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC02/014/0.4">
+		<text export="S2" import="common" addr="7ADF0,7AFA1" newfont="limit" en="SC01/084/0.4"/>
+		<vram group="pause" text="9D088"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6104C"/>
+		<vface xywh="60370"/>
+		<func name="locateFont"/>
+	</file>
+
+
+
+	<file name="SC03/001/0.4">
+		<text export="S2" import="common" addr="6A900,6C704,99301,9AA96" newfont="limit" en="SC03/001/0.4"/>
+		<children>
+			<!-- children是村中商店 -->
+			<file name="SC03/060/0.1"><text export="?" import="common" addr="630,108A" en="SC03/053/0.1"/></file>
+			<file name="SC03/061/0.1"><text export="?" import="common" addr="CE0,1BD1" en="SC03/054/0.1"/></file>
+			<file name="SC03/086/2.1"><text export="S3" import="common" addr="CA4,18E6" en="SC03/073/2.1"/></file>
+			<file name="SC03/087/2.1"><text export="S3" import="common" addr="D68,158D" en="SC03/074/2.1"/></file>
+			<file name="SC03/088/2.1"><text export="S3" import="common" addr="1480,1FE2" en="SC03/075/2.1"/></file>
+			<file name="SC03/089/2.1">
+				<text export="S3" import="common" addr="4460,4F25" en="SC03/076/2.1"/>
+				<vram group="memcard" text="4"/>
+			</file>
+			<file name="SC03/090/2.1"><text export="S3" import="common" addr="10B4,21B1" en="SC03/077/2.1"/></file>
+			<file name="SC03/091/2.1"><text export="S3" import="common" addr="BF8,107B" en="SC03/078/2.1"/></file>
+			<file name="SC03/092/2.1"><text export="S3" import="common" addr="D58,1B01" en="SC03/079/2.1"/></file>
+		</children>
+		<vram group="pause" text="C393C"/>
+		<vram group="shop" text="C47EC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="67D64"/>
+		<vface xywh="67088"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/002/0.4"><!-- 村子.与SC03/001/0.4文本一样-->
+		<text export="S2" import="common" addr="64270,623BC,641A8,8023C,819D6" newfont="limit" E8="" en="SC03/002/0.4"/>
+		<children>
+			<!-- 蒸汽树管理屋场景的几处对话 -->
+			<file name="SC03/063/0.1"><text export="?" import="common" addr="130,BC0" E8="" en="SC03/056/0.1"/></file>
+		</children>
+		<vram group="pause" text="A0E60"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5FD1C"/>
+		<vface xywh="5F040"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/004/0.4">
+		<text export="S2" import="common" addr="5AD64,5AE10" newfont="limit" en="SC03/003/0.4"/>
+		<vram group="pause" text="6568C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59AC4"/>
+		<vface xywh="58DE8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/007/0.4">
+		<text export="S2" import="common" addr="68CFC,69869" newfont="limit" en="SC03/006/0.4"/>
+		<vram group="pause" text="CCFA4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="66C68"/>
+		<vface xywh="65F8C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/008/0.4">
+		<text export="S2" import="common" addr="64564,645BA"/>
+		<vram group="pause" text="BF7EC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="61B1C"/>
+		<vface xywh="60E40"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/009/0.4">
+		<text export="S2" import="common" addr="612DC,6159E" newfont="limit" en="SC02/031/0.4"/>
+		<vram group="pause" text="8D25C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F470"/>
+		<vface xywh="5E794"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/012/0.4">
+		<text export="S2" import="common" addr="5BAE0,5BBED"  newfont="limit"/>
+		<vram group="pause" text="75B08"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5A6F8"/>
+		<vram group="pressure" text="5B6AC"/>
+		<vram group="timer" text="5B990"/>
+		<vface xywh="59A1C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/013/0.4">
+		<text export="S2" import="common" addr="5DB70,5E7C6" newfont="limit" en="SC03/011/0.4"/>
+		<vram group="pause" text="77B68"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5BA68"/>
+		<vram group="pressure" text="5CA1C"/>
+		<vface xywh="5AD8C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/014/0.4">
+		<vram group="pause" text="6AC70"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58948"/>
+		<vface xywh="57C6C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/015/0.4">
+		<text export="S2" import="common" addr="738FC,741A2" newfont="limit" en="SC03/013/0.4"/>
+		<vram group="pause" text="82E78"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5B730"/>
+		<vram group="pressure" text="5C6E4"/>
+		<vram group="timer" text="5CB68"/>
+		<vface xywh="5AA54"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/016/0.4">
+		<text export="S2" import="common" addr="6EA48,6FA85" newfont="limit" en="SC03/014/0.4"/>
+		<vram group="pause" text="C0414"/>
+		<vram group="boss" text="C1158"/>
+		<func name="showGetin"/>
+		<vram group="other" text="65D6C"/>
+		<vface xywh="65090"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/017/0.4">
+		<text export="S2" import="common" addr="6EA48,6FA85" newfont="limit" en="SC03/015/0.4"/>
+		<vram group="pause" text="C0414"/>
+		<vram group="boss" text="C1158"/>
+		<func name="showGetin"/>
+		<vram group="other" text="65D6C"/>
+		<vface xywh="65090"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/025/0.4">
+		<text export="S2" import="common" addr="5A9D8,5AA1B" newfont="limit" en="SC03/023/0.4"/>
+		<vram group="pause" text="6E880"/>
+		<func name="showGetin"/>
+		<vram group="other" text="596E8"/>
+		<vface xywh="58A0C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/026/0.4">
+		<text export="S2" import="common" addr="699B4,6A227" newfont="limit" en="SC03/024/0.4"/>
+		<vram group="pause" text="96ED0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6170C"/>
+		<vface xywh="60A30"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/030/0.4">
+		<text export="S2" import="common" addr="68CE4,69286" newfont="limit" en="SC03/028/0.4"/>
+		<vram group="pause" text="C0F54"/>
+		<vram group="boss" text="C1C4C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="661D8"/>
+		<vface xywh="654FC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/031/0.4">
+		<text export="S2" import="common" addr="667C8,66AD9" newfont="limit" en="SC03/029/0.4"/>
+		<vram group="pause" text="AEF90"/>
+		<func name="showGetin"/>
+		<vram group="other" text="62010"/>
+		<vface xywh="61334"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/032/0.4">
+		<text export="S2" import="common" addr="6DF28,6E912" newfont="limit" en="SC02/011/0.4"/>
+		<vram group="pause" text="C0BB0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6B4E0"/>
+		<vface xywh="6A804"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/033/0.4">
+		<text export="S2" import="common" addr="59C00,59CE4" newfont="limit" en="SC02/015/0.4"/>
+		<vram group="pause" text="65FC0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58A44"/>
+		<vface xywh="57D68"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/034/0.4">
+		<text export="S2" import="common" addr="638AC,63A0E" newfont="limit" en="SC02/016/0.4"/>
+		<vram group="pause" text="89BA0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5EC7C"/>
+		<vface xywh="5DFA0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/035/0.4">
+		<vram group="pause" text="B7670"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5C64C"/>
+		<vface xywh="5B970"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/036/0.4">
+		<text export="S2" import="common" addr="5E3A0,5E5E1" newfont="limit" en="SC03/031/0.4"/>
+		<vram group="pause" text="9BB7C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5CB58"/>
+		<vface xywh="5BE7C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/037/0.4">
+		<text export="S2" import="common" addr="5B6E4,5BC29" newfont="limit" en="SC02/021/0.4"/>
+		<vram group="pause" text="687F4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5A2AC"/>
+		<vface xywh="595D0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/105/0.1">
+		<text export="S2" import="common" addr="5F720,5F822" newfont="limit" en="SC02/037/0.1"/>
+		<vram group="pause" text="9F338"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5E40C"/>
+		<vface xywh="5D730"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/106/0.4">
+		<text export="S2" import="common" addr="6198C,61A4D" newfont="limit" en="SC02/026/0.4"/>
+		<vram group="pause" text="A5D3C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6091C"/>
+		<vface xywh="5FC40"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/107/0.4">
+		<text export="S2" import="common" addr="67240,6737E" newfont="limit" en="SC02/027/0.4"/>
+		<vram group="pause" text="AFAA4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="65A40"/>
+		<vface xywh="64D64"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/108/0.4">
+		<text export="S2" import="common" addr="67024,670FF" newfont="limit" en="SC02/028/0.4"/>
+		<vram group="pause" text="A8A24"/>
+		<func name="showGetin"/>
+		<vram group="other" text="65C44"/>
+		<vface xywh="64F68"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/109/0.4">
+		<vram group="pause" text="9C380"/>
+		<func name="showGetin"/>
+		<vram group="other" text="63E64"/>
+		<vface xywh="63188"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/110/0.4">
+		<vram group="pause" text="A17EC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="66288"/>
+		<vface xywh="655AC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/111/0.4">
+		<text export="S2" import="common" addr="684F8,685CA" newfont="limit"/>
+		<vram group="pause" text="A7F3C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="67130"/>
+		<vface xywh="66454"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/112/0.4">
+		<text export="S2" import="common" addr="612B0,61E50" newfont="limit" en="SC03/092/0.4"/>
+		<vram group="pause" text="888CC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F500"/>
+		<vface xywh="5E824"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/113/0.4">
+		<text export="S2" import="common" addr="61A10,61A9F" newfont="limit"/>
+		<vram group="pause" text="A1EE0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="606D8"/>
+		<vface xywh="5F9FC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/114/0.4">
+		<vram group="pause" text="A8D20"/>
+		<func name="showGetin"/>
+		<vram group="other" text="620D4"/>
+		<vface xywh="613F8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/115/0.4">
+		<vram group="pause" text="7194C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5B734"/>
+		<vface xywh="5AA58"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/116/0.4">
+		<vram group="pause" text="70400"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5B2B4"/>
+		<vface xywh="5A5D8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/117/0.4">
+		<text export="S2" import="common" addr="61968,61B01" newfont="limit" en="SC03/097/0.4"/>
+		<vram group="pause" text="804A8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="60694"/>
+		<vface xywh="5F9B8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/118/0.4">
+		<text export="S2" import="common" addr="60D14,60DB7" newfont="limit"/>
+		<vram group="pause" text="9B128"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5FB20"/>
+		<vface xywh="5EE44"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/119/0.4">
+		<vram group="pause" text="94504"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5ECD0"/>
+		<vface xywh="5DFF4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/120/0.4">
+		<vram group="pause" text="94DC8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5DC20"/>
+		<vface xywh="5CF44"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/121/0.4">
+		<text export="S2" import="common" addr="60320,6043D" newfont="limit" en="SC03/100/0.4"/>
+		<vram group="pause" text="9E02C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F0EC"/>
+		<vface xywh="5E410"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/122/0.4">
+		<text export="S2" import="common" addr="5F1DC,5F238" newfont="limit" en="SC03/101/0.4"/>
+		<vram group="pause" text="73910"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5E0C8"/>
+		<vface xywh="5D3EC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/123/0.4">
+		<vram group="pause" text="8F590"/>
+		<func name="showGetin"/>
+		<vram group="other" text="60980"/>
+		<vface xywh="5FCA4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/124/0.4">
+		<vram group="pause" text="9A744"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5E930"/>
+		<vface xywh="5DC54"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/125/0.4">
+		<text export="S2" import="common" addr="66594,6669D" newfont="limit" en="SC03/104/0.4"/>
+		<vram group="pause" text="95C90"/>
+		<func name="showGetin"/>
+		<vram group="other" text="654C0"/>
+		<vface xywh="647E4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/126/0.4">
+		<text export="S2" import="common" addr="67230,673BB" newfont="limit" en="SC03/105/0.4"/>
+		<vram group="pause" text="8EFC8"/>
+		<vram group="boss" text="8FCC0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="64B48"/>
+		<vface xywh="63E6C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/128/0.1">
+		<text export="S2" import="common" addr="5DDF8,5DE65" newfont="limit"/>
+		<vram group="pause" text="79BFC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5CBB4"/>
+		<vface xywh="5BED8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/129/0.4">
+		<vram group="pause" text="774A4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5B4A0"/>
+		<vface xywh="5A7C4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/130/0.4">
+		<text export="S2" import="common" addr="59CB8,59D32" newfont="limit" en="SC03/109/0.4"/>
+		<vram group="pause" text="6FFC8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58B4C"/>
+		<vface xywh="57E70"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/131/0.4">
+		<text export="S2" import="common" addr="5D7E0,5D8D0" newfont="limit" en="SC03/110/0.4"/>
+		<vram group="pause" text="77C78"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5C56C"/>
+		<vface xywh="5B890"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/132/0.4">
+		<text export="S2" import="common" addr="60938,60BD4" newfont="limit" en="SC03/111/0.4"/>
+		<vram group="pause" text="8F210"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F120"/>
+		<vface xywh="5E444"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/133/0.4">
+		<text export="S2" import="common" addr="6140C,61459" newfont="limit"/>
+		<vram group="pause" text="828AC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5FE8C"/>
+		<vface xywh="5F1B0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/134/0.4">
+		<vram group="pause" text="7B5C0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5D5D8"/>
+		<vface xywh="5C8FC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/135/0.4">
+		<text export="S2" import="common" addr="5B018,5B0BC,5B57A" newfont="limit" en="SC03/114/0.4"/>
+		<vram group="pause" text="7F448"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59240"/>
+		<vface xywh="58564"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/136/0.4">
+		<text export="S2" import="common" addr="5BE14,5C051" newfont="limit" en="SC03/115/0.4"/>
+		<vram group="pause" text="6AB14"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5AC10"/>
+		<vface xywh="59F34"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/137/0.4">
+		<vram group="pause" text="6D7E0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5D0B4"/>
+		<vface xywh="5C3D8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/138/0.4">
+		<text export="S2" import="common" addr="60998,60BAF" newfont="limit" en="SC03/117/0.4"/>
+		<vram group="pause" text="A4568"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F0BC"/>
+		<vface xywh="5E3E0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/139/0.4">
+		<text export="S2" import="common" addr="6BE10,6C81F" newfont="limit" en="SC03/118/0.4"/>
+		<vram group="pause" text="A9E54"/>
+		<func name="showGetin"/>
+		<vram group="other" text="64168"/>
+		<vface xywh="6348C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/140/0.4">
+		<text export="S2" import="common" addr="6BE10,6C81F" newfont="limit" en="SC03/119/0.4"/>
+		<vram group="pause" text="A9E54"/>
+		<func name="showGetin"/>
+		<vram group="other" text="64168"/>
+		<vface xywh="6348C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/142/0.4">
+		<vram group="pause" text="768F0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="598FC"/>
+		<vface xywh="58C20"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/143/0.4">
+		<text export="S2" import="common" addr="5DC80,5E4A8" newfont="limit" en="SC03/121/0.4"/>
+		<vram group="pause" text="84A40"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5C984"/>
+		<vface xywh="5BCA8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/148/0.4">
+		<text export="S2" import="common" addr="6852C,6AB8C,943F8,95B92" newfont="limit" enc2="111" E8="" en="SC03/124/0.4"/>
+		<children>
+			<file name="SC03/156/2.1"><text export="S3" import="common" addr="18EC,BC0,17EA" en="SC03/132/2.1"/></file>
+			<file name="SC03/157/2.1"><text export="S3" import="common" addr="159C,C8C,1499" en="SC03/133/2.1"/></file>
+			<file name="SC03/158/2.1"><text export="S3" import="common" addr="202C,13CC,1F16" en="SC03/134/2.1"/></file>
+			<file name="SC03/159/2.1">
+				<text export="S3" import="common" addr="4F34,4384,4E31" en="SC03/135/2.1"/>
+				<vram group="memcard" text="4"/>
+			</file>
+			<file name="SC03/160/2.1"><text export="S3" import="common" addr="21A0,FB8,209D" en="SC03/136/2.1"/></file>
+			<file name="SC03/161/2.1"><text export="S3" import="common" addr="1088,B1C,F87" en="SC03/137/2.1"/></file>
+			<file name="SC03/162/2.1"><text export="S3" import="common" addr="1E20,FC8,1D59" en="SC03/138/2.1"/></file>
+		</children>
+		<vram group="pause" text="B6988"/>
+		<vram group="shop" text="B76FC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="653CC"/>
+		<vface xywh="646F0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/149/0.4"><!-- 村子. 与 SC03/148/0.4中的文本一样 -->
+		<text export="S2" import="common" addr="78b20,60180,627C8,7E2B8,7FA52" newfont="limit" en="SC03/125/0.4"/>
+		<vram group="pause" text="99658"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5E580"/>
+		<vface xywh="5D8A4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC03/150/0.4">
+		<text export="S2" import="common" addr="5AD0C,5ADB8" newfont="limit" en="SC03/126/0.4"/>
+		<vram group="pause" text="65640"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59A78"/>
+		<vface xywh="58D9C"/>
+		<func name="locateFont"/>
+	</file>
+
+
+
+	<file name="SC04/000/0.4">
+		<text export="S2" import="common" addr="5EEC8,5F64F" newfont="limit" en="SC04/000/0.4"/>
+		<vram group="pause" text="7F714"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5DA84"/>
+		<vface xywh="5CDA8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/002/0.4">
+		<text export="S2" import="common" addr="64318,644A5" newfont="limit" en="SC04/002/0.4"/>
+		<vram group="pause" text="969F0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="62BD0"/>
+		<vface xywh="61EF4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/003/0.4">
+		<text export="S2" import="common" addr="5DAA4,5DB0C" newfont="limit" en="SC04/003/0.4"/>
+		<vram group="pause" text="716CC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5C98C"/>
+		<vface xywh="5BCB0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/004/0.4">
+		<text export="S2" import="common" addr="604D0,60548" newfont="limit"/>
+		<vram group="pause" text="89440"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5EEC0"/>
+		<vface xywh="5E1E4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/005/0.4">
+		<text export="S2" import="common" addr="63708,63936" newfont="limit" en="SC04/005/0.4"/>
+		<vram group="pause" text="9764C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="622F4"/>
+		<vface xywh="61618"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/006/0.4">
+		<text export="S2" import="common" addr="5B4E0,5B5A4" newfont="limit" en="SC04/006/0.4"/>
+		<vram group="pause" text="738A4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5A3D4"/>
+		<vface xywh="596F8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/007/0.4">
+		<text export="S2" import="common" addr="61638,61700" newfont="limit" en="SC04/007/0.4"/>
+		<vram group="pause" text="8AEB0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6038C"/>
+		<vface xywh="5F6B0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/008/0.4">
+		<text export="S2" import="common" addr="60A68,60B2B" newfont="limit" en="SC04/009/0.4"/>
+		<vram group="pause" text="8EC3C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F5CC"/>
+		<vface xywh="5E8F0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/009/0.4">
+		<vram group="pause" text="67B60"/>
+		<func name="showGetin"/>
+		<vram group="other" text="592C4"/>
+		<vface xywh="585E8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/010/0.4">
+		<text export="S2" import="common" addr="5A56C,5A630" newfont="limit" en="SC02/041/0.4"/>
+		<vram group="pause" text="6DD60"/>
+		<func name="showGetin"/>
+		<vram group="other" text="592F0"/>
+		<vface xywh="58614"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/011/0.4">
+		<vram group="pause" text="65200"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5899C"/>
+		<vface xywh="57CC0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/012/0.4">
+		<text export="S2" import="common" addr="6CB84,6CC2E" newfont="limit" en="SC04/011/0.4"/>
+		<vram group="pause" text="C47C0"/>
+		<vram group="boss" text="C54B8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6AC2C"/>
+		<vface xywh="69F50"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/013/0.4">
+		<text export="S2" import="common" addr="5A09C,5A2B5" newfont="limit" en="SC04/012/0.4"/>
+		<vram group="pause" text="678C8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58E00"/>
+		<vface xywh="58124"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/017/0.4">
+		<text export="S2" import="common" addr="6093C,60BAA,9C448,9DBE2" newfont="limit" en="SC04/015/0.4"/>
+		<vram group="pause" text="9E63C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5ED20"/>
+		<vface xywh="5E044"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/018/0.4">
+		<text export="S2" import="common" addr="5CAD8,5CB2C,5D065" newfont="limit" en="SC04/016/0.4"/>
+		<vram group="pause" text="7C788"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5A7FC"/>
+		<vface xywh="59B20"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/020/0.4">
+		<text export="S2" import="common" addr="8E718,B6438,B7BD2,B82B4,BA6D8" en="SC04/018/0.4"/>
+		<children>
+			<file name="SC04/026/2.1"><text export="S3" import="common" addr="1914,BE8,1812" en="SC04/024/2.1"/></file>
+			<file name="SC04/027/2.1"><text export="S3" import="common" addr="15C4,CB4,14C1" en="SC04/025/2.1"/></file>
+			<file name="SC04/028/2.1"><text export="S3" import="common" addr="202C,13CC,1F16" en="SC04/026/2.1"/></file>
+			<file name="SC04/029/2.1">
+				<text export="S3" import="common" addr="4F5C,43AC,4E59" en="SC04/027/2.1"/>
+				<vram group="memcard" text="4"/>
+			</file>
+			<file name="SC04/030/2.1"><text export="S3" import="common" addr="21C8,FE0,20C5" en="SC04/028/2.1"/></file>
+			<file name="SC04/031/2.1"><text export="S3" import="common" addr="10B0,B44,FAF" en="SC04/029/2.1"/></file>
+			<file name="SC04/032/2.1"><text export="S3" import="common" addr="1AFC,CA4,1A35" en="SC04/030/2.1"/></file>
+		</children>
+		<vram group="pause" text="BC010"/>
+		<vram group="shop" text="BCDB0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="67A30"/>
+		<vface xywh="66D54"/>
+		<func name="locateFont"/>
+	</file>
+	<!-- 与SC04/020/0.4完全一致 -->
+	<file name="SC04/021/0.4">
+		<text export="S2" import="common" addr="8E718,B6438,B7BD2,B82B4,BA6D8" en="SC04/018/0.4"/>
+		<vram group="pause" text="BC010"/>
+		<vram group="shop" text="BCDB0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="67A30"/>
+		<vface xywh="66D54"/>
+		<func name="locateFont"/>
+	</file>
+	
+	<file name="SC04/022/0.4">
+		<text export="S2" import="common" addr="83498,80758,81EF2,8DD1C,90140" newfont="limit" en="SC04/020/0.4"/><!-- 不确定是script2或script3 -->
+		<vram group="pause" text="91A1C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5DB4C"/>
+		<vface xywh="5CE70"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC04/023/0.4">
+		<text export="S2" import="common" addr="5AD0C,5ADB8" newfont="limit" en="SC04/021/0.4"/>
+		<vram group="pause" text="65640"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59A78"/>
+		<vface xywh="58D9C"/>
+		<func name="locateFont"/>
+	</file>
+
+
+
+	<file name="SC05/000/0.4">
+		<text export="S2" import="common" addr="59DF0,59EA4" newfont="limit" en="SC05/000/0.4"/>
+		<vram group="pause" text="7077C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58A8C"/>
+		<vface xywh="57DB0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/001/0.4">
+		<text export="S2" import="common" addr="6181C,61956" newfont="limit" en="SC05/001/0.4"/>
+		<vram group="pause" text="8B68C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="601CC"/>
+		<vface xywh="5F4F0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/002/0.4">
+		<text export="S2" import="common" addr="5BEC0,5BF97" newfont="limit" en="SC05/002/0.4"/>
+		<vram group="pause" text="75AA8"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5AA28"/>
+		<vface xywh="59D4C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/003/0.4">
+		<vram group="pause" text="8252C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5CCD4"/>
+		<vface xywh="5BFF8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/004/0.4">
+		<text export="S2" import="common" addr="5D298,5D303"/>
+		<vram group="pause" text="74BC4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5BE6C"/>
+		<vface xywh="5B190"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/005/0.4">
+		<text export="?" import="common" addr="5E028,5E0C9"/>
+		<vram group="pause" text="878D4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5CC40"/>
+		<vface xywh="5BF64"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/006/0.4">
+		<text export="S2" import="common" addr="5AE50,5AEFC" newfont="limit"/>
+		<vram group="pause" text="65A0C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59C60"/>
+		<vface xywh="58F84"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/007/0.4">
+		<text export="S2" import="common" addr="5C330,5C4B4" newfont="limit" en="SC05/007/0.4"/>
+		<vram group="pause" text="728F0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5B1C0"/>
+		<vface xywh="5A4E4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/008/0.4">
+		<vram group="pause" text="76CEC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5D1B4"/>
+		<vface xywh="5C4D8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/009/0.4">
+		<vram group="pause" text="6C704"/>
+		<func name="showGetin"/>
+		<vram group="other" text="592C4"/>
+		<vface xywh="585E8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/010/0.4">
+		<text export="S2" import="common" addr="6C068,6C1F4" newfont="limit" en="SC05/010/0.4"/>
+		<vram group="pause" text="9C938"/>
+		<vram group="boss" text="9D630"/>
+		<func name="showGetin"/>
+		<vram group="other" text="631A0"/>
+		<vface xywh="624C4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/011/0.4">
+		<text export="S2" import="common" addr="5A160,5A1B4,5A620" newfont="limit" en="SC05/011/0.4"/>
+		<vram group="pause" text="72E3C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58518"/>
+		<vface xywh="5783C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/017/0.4">
+		<text export="S2" import="common" addr="8E610,BC6F8,BDE92,BE574,C05D4" newfont="limit" E8="" enc2="105" en="SC05/017/0.4"/>
+		<children>
+			<file name="SC05/023/2.1"><text export="S3" import="common" addr="1944,C18,1842" en="SC05/023/2.1" memo="toy"/></file>
+			<file name="SC05/024/2.1"><text export="S3" import="common" addr="15EC,CDC,14E9" en="SC05/024/2.1"/></file>
+			<file name="SC05/025/2.1"><text export="S3" import="common" addr="2054,13F4,1F3E" en="SC05/025/2.1"/></file>
+			<file name="SC05/026/2.1">
+				<text export="S3" import="common" addr="4F84,43D4,4E81" en="SC05/026/2.1"/>
+				<vram group="memcard" text="4"/>	
+			</file>
+			<file name="SC05/027/2.1"><text export="S3" import="common" addr="21F0,1008,20ED" en="SC05/027/2.1"/></file>
+			<file name="SC05/028/2.1"><text export="S3" import="common" addr="10D8,B6C,FD7" en="SC05/028/2.1"/></file>
+			<file name="SC05/029/2.1"><text export="S3" import="common" addr="1B24,CCC,1A5D" en="SC05/029/2.1"/></file>
+		</children>
+		<vram group="pause" text="C1F58"/>
+		<vram group="shop" text="C2D10"/>
+		<func name="showGetin"/>
+		<vram group="other" text="679F4"/>
+		<vface xywh="66D18"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/018/0.4"><!-- 村对话,文本与SC05/017/0.4一样 -->
+		<text export="S2" import="common" addr="7A1E4,77408,78B66,B80B4,BA114" newfont="limit" E8="" en="SC05/018/0.4"/>
+		<vram group="pause" text="BBAB0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="61134"/>
+		<vface xywh="60458"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC05/019/0.4">
+		<text export="S2" import="common" addr="5AD0C,5ADB6" newfont="limit" en="SC05/019/0.4"/>
+		<vram group="pause" text="65640"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59A78"/>
+		<vface xywh="58D9C"/>
+		<func name="locateFont"/>
+	</file>
+
+
+
+	<file name="SC06/000/0.4">
+		<text export="S2" import="common" addr="69BB4,69C70" newfont="limit" en="SC06/000/0.4"/>
+		<vram group="pause" text="84268"/>
+		<func name="showGetin"/>
+		<vram group="other" text="62A88"/>
+		<vface xywh="61DAC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/006/0.4">
+		<text export="S2" import="common" addr="5E1E8,5E459" newfont="limit" en="SC06/006/0.4"/>
+		<vram group="pause" text="CDC20"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5C590"/>
+		<vface xywh="5B8B4"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/008/0.4">
+		<text export="S2" import="common" addr="613D8,615D0,615E9" newfont="limit" en="SC06/008/0.4"/>
+		<vram group="pause" text="7FC74"/>
+		<func name="showGetin"/>
+		<vram group="other" text="60014"/>
+		<vface xywh="5F338"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/010/0.4">
+		<text export="S2" import="common" addr="62EB4,62EE6" newfont="limit" en="SC06/010/0.4"/>
+		<vram group="pause" text="87CCC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="611F0"/>
+		<vface xywh="60514"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/011/0.4">
+		<vram group="pause" text="81818"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5AC50"/>
+		<vface xywh="59F74"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/013/0.4">
+		<vram group="pause" text="706EC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="593CC"/>
+		<vface xywh="586F0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/014/0.4">
+		<vram group="pause" text="770DC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5A730"/>
+		<vface xywh="59A54"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/015/0.4">
+		<vram group="pause" text="6A4BC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="59288"/>
+		<vface xywh="585AC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/016/0.4">
+		<text export="S2" import="common" addr="60F70,612E7" newfont="limit" en="SC06/016/0.4"/>
+		<vram group="pause" text="751AC"/>
+		<vram group="boss" text="75EA4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F698"/>
+		<vface xywh="5E9BC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/018/0.4">
+		<vram group="pause" text="AA99C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6DDDC"/>
+		<vface xywh="6D100"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/020/0.4">
+		<text export="Nosubfont" import="common" addr="60A40,60A5E" en="SC06/020/0.4"/> 
+		<vram group="pause" text="90278"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F85C"/>
+		<vface xywh="5EB80"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/022/0.4">
+		<vram group="pause" text="B7A8C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="67B18"/>
+		<vface xywh="66E3C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/024/0.4">
+		<vram group="pause" text="B6BD0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="69FF0"/>
+		<vface xywh="69314"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/025/0.4">
+		<text export="S2" import="common" addr="612AC,61AC5" newfont="limit" en="SC06/025/0.4"/>
+		<vram group="pause" text="86FC4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5F484"/>
+		<vface xywh="5E7A8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/027/0.4">
+		<text export="S2" import="common" addr="598B0,5997C" newfont="limit" en="SC06/027/0.4"/>
+		<vram group="pause" text="72F14"/>
+		<func name="showGetin"/>
+		<vram group="other" text="587D4"/>
+		<vface xywh="57AF8"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/029/0.4">
+		<text export="S2" import="common" addr="6A094,6B3BF" newfont="limit" en="SC06/029/0.4"/>
+		<vram group="pause" text="B29DC"/>
+		<vram group="boss" text="B36D4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="66D68"/>
+		<vface xywh="6608C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/030/0.4">
+		<text export="S2" import="common" addr="5DB6C,5DDC2" newfont="limit" en="SC06/030/0.4"/>
+		<vram group="pause" text="8F914"/>
+		<vram group="boss" text="9060C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5C5F8"/>
+		<vface xywh="5B91C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/032/0.4">
+		<vram group="pause" text="A5F70"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6DB2C"/>
+		<vface xywh="6CE50"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC06/033/0.4">
+		<vram group="pause" text="A6024"/>
+		<func name="showGetin"/>
+		<vram group="other" text="6C03C"/>
+		<vface xywh="6B360"/>
+		<func name="locateFont"/>
+	</file>
+
+
+	<file name="SC07/000/0.4">
+		<text export="S2" import="common" addr="5E5F8,5E9D5" newfont="limit" en="SC07/000/0.4"/>
+		<vram group="pause" text="A5854"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5CE7C"/>
+		<vface xywh="5C1A0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/001/0.4">
+		<text export="S2" import="common" addr="5D438,5D60F" newfont="limit" en="SC07/001/0.4"/>
+		<vram group="pause" text="80884"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5BD2C"/>
+		<vface xywh="5B050"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/002/0.4">
+		<text export="S2" import="common" addr="622E0,623FE" newfont="limit" en="SC07/002/0.4"/>
+		<vram group="pause" text="7124C"/>
+		<vram group="boss" text="71F44"/>
+		<func name="showGetin"/>
+		<vram group="other" text="60FE8"/>
+		<vface xywh="6030C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/006/1.4">
+		<text export="Nosubfont" import="common" addr="66904,669EE"/>
+		<vram group="pause" text="CBC78"/>
+		<func name="showGetin"/>
+		<vram group="other" text="64C0C"/>
+		<vface xywh="63F30"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/007/1.4">
+		<text export="S2" import="common" addr="60558,60B62" newfont="limit" en="SC07/007/1.4"/>
+		<vram group="pause" text="9D4C4"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5D718"/>
+		<vface xywh="5CA3C"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/008/0.4">
+		<vram group="pause" text="6C24C"/>
+		<func name="showGetin"/>
+		<vram group="other" text="57B00"/>
+		<vface xywh="56E24"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/009/0.4">
+		<vram group="pause" text="798C0"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5858C"/>
+		<vface xywh="578B0"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/010/1.4">
+		<vram group="pause" text="7D924"/>
+		<func name="showGetin"/>
+		<vram group="other" text="5C7A8"/>
+		<vface xywh="5BACC"/>
+		<func name="locateFont"/>
+	</file>
+	<file name="SC07/011/1.4">
+		<vram group="pause" text="65FEC"/>
+		<func name="showGetin"/>
+		<vram group="other" text="58E68"/>
+		<vface xywh="5818C"/>
+		<func name="locateFont"/>
+	</file>
+</xml>

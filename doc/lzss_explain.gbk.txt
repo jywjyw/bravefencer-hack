@@ -1,0 +1,125 @@
+lz系压缩算法的艺术(学习lzss.c压缩部分的精妙之处)
+
+程序设计是一门艺术。----------- 高德纳
+
+先看这样一段代码
+[code]
+unsigned char
+		text_buf[N + F - 1];	/* ring buffer of size N,
+			with extra F-1 bytes to facilitate string comparison */
+这个是lzss的滑动匹配窗口，从0到N+F-1，共有N+F个元素，奥妙来了，明明一个长度为N的滑动窗口却多申请了F(18)个元素。
+察看f的定义
+[code]#define F		   18	/* upper limit for match_length */  //匹配最大长度[/code]
+恩,在看看text_buf的定义， 注意是一个ring buffer，也就是环状缓冲区。我们试着模拟一下text_buf的情况
+
+A B C D E F G H I J K A B C D
+0                  N-1    N-1+F
+
+结合代码172行 [code]s = (s + 1) & (N - 1);  r = (r + 1) & (N - 1);[/code]
+s %= n      r%= n
+以及
+[code]DeleteNode(s);
+InsertNode(r);[/code]
+可以推知r代表的是要检测数据序列的起始地址，而s则为新插入元素位置，即初始状态下（为了方便理解，故从1开始）
+A B C D E F G H I J K A B C 
+0                  N-1  N-1+F-1        共N+F-1个元素
+	    N-1-F
+S             R      
+随着R与S向右滑动  以R起始的F长度数据序列形成环状,而无需进行按位判断，故降低执行指令调数
+值得注意的是，S在1-F的长度中，每次更新需要将N后的冗余序列同时更新
+L B C D E F G H I J K L B C    匹配序列由H I J K变成了I J K L
+0                  N-1  N-1+F-1
+	    N-1-F
+  S             R       S'
+因为取模的原因R<=N-1，于是如下情况
+L M N D E F G H I J K L M N 
+0                  N-1  N-1+F-1
+      S             R
+R = (N-1+1)%N = 0
+
+故
+L M N O E F G H I J K L M N     由K L M N O  转换成了 
+0                  N-1  N-1+F-1
+R       S                    S'无需更新
+此时S必等于F，故冗余数据不再更新
+
+所以原函数中进行如下操作
+[code]if (s < F - 1) text_buf[s + N] = c;  /* If the position is
+				near the end of buffer, extend the buffer to make
+				string comparison easier. */[/code]
+
+好了，开胃菜到此结束，我们来搞一点稍微晦涩的东西，字典二叉树
+首先了解树的概念，算了，严蔚敏老师讲的好多了，我就不误人子弟了，说说字典排序二叉树，简单的排序树如下所示
+	 4
+      /     \
+     2       6
+    / \     / \ 
+   1   3   5   7 
+即左子树<根节点<右子树 ，对树中的每一个字节点皆成立
+代入到字典排序二叉树中，可以做如下的设想
+[code]num = num<<8 + byte[i][/code]对num进行二叉排序，不足部分用00填充，以保持位一致，可以构造出如下树
+
+	 abc
+       /     \
+     aba      acc
+     / \     /  \
+   aaa abb  aca acd         
+中序遍历为 aaa,aba,abb,abc,aca,acc,acd我们增加一个根索引(就像字典的ABCD一样的目录)
+	  a
+	  |
+	 abc
+       /     \
+     aba      acc
+     / \     /  \
+   aaa abb  aca acd
+然后随便用一个字符串abbcd来进行匹配
+进入根节点，比abc要小，进入abc左子树查找，匹配度为2
+比abbcd比aba大，进入aba右子树查找，匹配度为2
+abbcd比abb大，进入abb又子树查找(null),匹配度为3
+值得注意的是并非叶子节点的匹配度一定高于径节点，例如
+		acc
+	       /   \
+	      abb  add
+在匹配acb这个串的时候，径节点的匹配度为2，而叶子节点abb的匹配度只有1，了解了这些就可以稍稍看一下代码了
+[code]		lson[N + 1], rson[N + 257], dad[N + 1];  /* left & right children &
+			parents -- These constitute binary search trees. */
+[/code]
+这种有并查集意味的树的定义方式相当值得玩味，对于一个节点k来说，他的左子树的根节点kleft 装在lson[k]中，kright装在rson[k]中，父亲节点(直接前驱节点)装在dad[k]中
+而且值得注意的是rson多分配了256个元素的空间，这就是前面我提到的根索引a，因为我们面向的是数据，非字符串，所以共有0-0xff 256颗树。对多出来的节点，如a的ascii码为97，则a作为索引的地址为N+1+97
+
+呼，到了这里我就可以放心大胆地放上代码了
+[code]void InsertNode(int r)
+	/* Inserts string of length F, text_buf[r..r+F-1], into one of the
+	   trees (text_buf[r]'th tree) and returns the longest-match position
+	   and length via the global variables match_position and match_length.
+	   If match_length = F, then removes the old node in favor of the new
+	   one, because the old one will be deleted sooner.
+	   Note r plays double role, as tree node and position in buffer. */
+{
+	int  i, p, cmp;
+	unsigned char  *key;
+
+	cmp = 1;  key = &text_buf[r];  p = N + 1 + key[0];     //还记得吗，rson多分配的256个元素空间，P指向索引根节点
+	rson[r] = lson[r] = NIL;  match_length = 0;            //r扮演了两个角色，作为树的节点和缓冲区中的位置
+	for ( ; ; ) {
+		if (cmp >= 0) {                                //这是进行匹配后寻径的方式，cmp大于等于0（除了根节点，cmp只在失配时改变，永远都不可能等于0），查找当前节点的右节点，反之查找左节点
+			if (rson[p] != NIL) p = rson[p];
+			else {  rson[p] = r;  dad[r] = p;  return;  }
+		} else {
+			if (lson[p] != NIL) p = lson[p];
+			else {  lson[p] = r;  dad[r] = p;  return;  }
+		}
+		for (i = 1; i < F; i++)                       //对左节点进行匹配操作，更新cmp
+			if ((cmp = key[i] - text_buf[p + i]) != 0)  break;
+		if (i > match_length) {			      //全局变量match_length就是最大匹配长度
+			match_position = p;
+			if ((match_length = i) >= F)  break;  //为什么mathch_length不能超过F，因为压缩元只为长度预留了4位空间，压缩的大小只能是3-18，比他小没意义，比他大装不下
+		}
+	}
+	dad[r] = dad[p];  lson[r] = lson[p];  rson[r] = rson[p];//悲惨的p大被r取代
+	dad[lson[p]] = r;  dad[rson[p]] = r;
+	if (rson[dad[p]] == p) rson[dad[p]] = r;                
+	else                   lson[dad[p]] = r;
+	dad[p] = NIL;  /* remove p */                         //干净利索的删除了
+}[/code]
+
