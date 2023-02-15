@@ -15,6 +15,8 @@ public class Dump {
 	
 	public static void main(String[] args) throws Exception {
 		System.out.println("dumping....");
+		
+		//make sure call CdSplitter.java to split *.CD first
 //		CdSplitter sp=new CdSplitter(Conf.desktop+"brmen\\");
 //		sp.split(Conf.endir);
 //		String splitdir= sp.getSplitDir();
