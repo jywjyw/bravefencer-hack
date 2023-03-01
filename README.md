@@ -1,12 +1,10 @@
-Platform: PlayStation1 
-Name: Brave Fencer Musashi
-Name: ブレイヴフェンサー 武蔵伝
-Name: 勇敢的剑士 武藏传  
+Platform: PlayStation1  
+Name: Brave Fencer Musashi / ブレイヴフェンサー 武蔵伝 / 勇敢的剑士 武藏传  
 Version: Japan Original  
-Serial:SLPS-01490    
+Serial: SLPS-01490    
 
 PlayStation1 game [Brave Fencer Musashi] Chinese Translation Project
-* extract texts and pictures from Japanese version CD
+* extract texts and some pictures from Japanese version CD
 * extract texts from US version CD
 * import translated texts and pictures to Japanese version CD
 * use BIOS to store Chinese Character  
